@@ -32,10 +32,10 @@ header a span img{
 }
 
 .logo{
-    color: white;
-    font-size: 1.3rem;
-    font-weight: 600;
-    text-wrap: nowrap;
+    /* color: white; */
+    /* font-size: 1.3rem; */
+    /* font-weight: 600; */
+    /* text-wrap: nowrap; */
     transition: 0.3s ease-in-out;
 }
 
@@ -71,7 +71,7 @@ li a:hover::before{
 }
 
 .visit-btn{
-    padding: 0.8rem 1.5rem;
+    padding: 0.8rem 1rem;
     border-radius: 3rem;
     border: none;
     font-weight: 500;
@@ -80,12 +80,16 @@ li a:hover::before{
     cursor: pointer;
     text-wrap: nowrap;
     transition: 0.3s ease-in-out;
-    background: linear-gradient(to right,blue,purple) ;
+    background: linear-gradient(to right,rgb(9, 9, 174),rgb(95, 4, 168)) ;
+}
+
+.visit-btn a{
+    color: inherit; /*use the same color as the parent element*/
 }
 
 .visit-btn:hover{
     transform: scale(1.1);
-    background: linear-gradient(to right,purple,blue) ;
+    background: linear-gradient(to right,rgb(9, 9, 174),rgb(95, 4, 168)) ;
 }
 
 #menu-icon{
@@ -100,6 +104,7 @@ section{
     position: relative;
 }
 
+/* about section */
 .about{
     display: flex;
     align-items: center;
@@ -139,7 +144,7 @@ section{
 }
 
 .info-box span{
-    background: linear-gradient(to right,blue,purple) ;
+    background: linear-gradient(to right,rgb(9, 9, 174),rgb(95, 4, 168)) ;
     background-clip: text;
     color: transparent;
     font-size: 2rem;
@@ -180,6 +185,7 @@ section{
     transform: scale(1.1);
 }
 
+/* experience section */
 .section-title{
     text-align: center;
     font-size: 4rem;
@@ -194,10 +200,10 @@ section{
     gap: 5rem;
 }
 
-.experience img{
+/* .experience img{
     width: 24vw;
     border-radius: 50%;
-}
+} */
 
 .grid{
     display: grid;
@@ -228,14 +234,21 @@ section{
     margin-bottom: 1rem;
 }
 
+.grid-card .italic{
+    font-size: 1.2rem;
+    margin-left: 0.5rem;
+}
+
 .grid-card span{
     font-size: 1.5rem;
     font-weight: 500;
-    background: linear-gradient(to right,blue,purple) ;
+    background: linear-gradient(to right,rgb(9, 9, 174),rgb(95, 4, 168)) ;
     background-clip: text;
     color: transparent;
 }
 
+
+/* side scrollbar */
 ::-webkit-scrollbar{
     width: 15px;
 }
@@ -247,6 +260,12 @@ section{
 ::-webkit-scrollbar-thumb{
     background: linear-gradient(to right,rgb(13, 13, 65),rgb(54, 3, 99));
     border-radius: 1rem;
+}
+
+
+/* project section */
+.btn a{
+    color: inherit;     /*use the same color as the parent element*/
 }
 
 .projects-grid{
@@ -294,6 +313,7 @@ section{
     font-weight: 500;   
 }
 
+/* contact section */
 .input-box{
     display:flex;
     flex-direction: column;
@@ -307,12 +327,12 @@ section{
 .input-box input{
     border-radius: 3rem;
     border: 2px solid black;
-    padding: 2rem 8rem;
-    font-size: 3rem;
+    padding: 1rem 8rem;
+    font-size: 2rem;
 }
 
 .input-box input::placeholder{
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 .input {
@@ -327,6 +347,7 @@ section{
     transform: translate(50%,-50%);
 }
 
+/* footer */
 footer{
     bottom: 0;
     left: 0;
@@ -355,7 +376,7 @@ footer ul li a{
     opacity: 0.8;
 }
 
-
+/* responsive */
 @media (max-width: 1280px) {
     header{
         padding: 1rem 2rem;
@@ -368,14 +389,14 @@ footer ul li a{
         flex-direction: column;
     }
     .input-box input{
-        padding: 2rem 5rem;
-        font-size: 2.5rem;
+        padding: 1rem 5rem;
+        font-size: 2rem;
     }
     .input input::placeholder{
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
     .input-box i{
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 }
 @media (max-width: 768px) {
