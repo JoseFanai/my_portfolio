@@ -185,6 +185,10 @@ section{
     transform: scale(1.1);
 }
 
+.socials a{
+    color: inherit;
+}
+
 /* experience section */
 .section-title{
     text-align: center;
