@@ -204,10 +204,10 @@ section{
     gap: 5rem;
 }
 
-/* .experience img{
+.experience img{
     width: 24vw;
     border-radius: 50%;
-} */
+}
 
 .grid{
     display: grid;
