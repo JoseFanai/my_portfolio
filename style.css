@@ -31,6 +31,30 @@ header a span img {
     border-radius: 50%;
 }
 
+section {
+    min-height: 50vh;
+    /* Design mawi nan chauh */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* A tira a lan dan tur (A inthukru) */
+.hidden {
+    opacity: 0;
+    transform: translateY(50px);
+    /* Tlem a hniam atangin a rawn chho ang */
+    transition: all 0.8s ease-out;
+    /* Hei hi a rawn lan smooth tirtu chu a ni */
+}
+
+/* Screen a a rawn lan huna a awm dan tur */
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 .logo {
     /* color: white; */
     /* font-size: 1.3rem; */
@@ -558,7 +582,7 @@ footer ul li a {
     font-size: 18px;
 }
 
-.btn-form{
+.btn-form {
     display: block;
     margin: 0 auto;
     padding: 10px 30px;
@@ -576,6 +600,6 @@ footer ul li a {
     transition: 0.3s;
 }
 
-.input input::placeholder{
+.input input::placeholder {
     font-size: 20px;
 }
