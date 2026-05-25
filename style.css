@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,7 +8,7 @@
     list-style: none;
 }
 
-header{
+header {
     position: fixed;
     top: 1rem;
     left: 50%;
@@ -25,13 +25,13 @@ header{
     z-index: 1000;
 }
 
-header a span img{
+header a span img {
     width: 35px;
     margin-left: 5px;
     border-radius: 50%;
 }
 
-.logo{
+.logo {
     /* color: white; */
     /* font-size: 1.3rem; */
     /* font-weight: 600; */
@@ -39,22 +39,22 @@ header a span img{
     transition: 0.3s ease-in-out;
 }
 
-.logo:hover{
+.logo:hover {
     transform: scale(1.1);
 }
 
-.nav-links{
+.nav-links {
     display: flex;
     gap: 2rem;
 }
 
-li a{
+li a {
     position: relative;
     color: white;
     font-weight: 300;
 }
 
-li a::before{
+li a::before {
     position: absolute;
     content: "";
     width: 0;
@@ -63,14 +63,14 @@ li a::before{
     top: 25px;
     border-radius: 1rem;
     transition: 0.3s ease-in-out;
-    background: linear-gradient(to right,blue,purple) ;
+    background: linear-gradient(to right, blue, purple);
 }
 
-li a:hover::before{
+li a:hover::before {
     width: 100%;
 }
 
-.visit-btn{
+.visit-btn {
     padding: 0.8rem 1rem;
     border-radius: 3rem;
     border: none;
@@ -80,24 +80,25 @@ li a:hover::before{
     cursor: pointer;
     text-wrap: nowrap;
     transition: 0.3s ease-in-out;
-    background: linear-gradient(to right,rgb(9, 9, 174),rgb(95, 4, 168)) ;
+    background: linear-gradient(to right, rgb(9, 9, 174), rgb(95, 4, 168));
 }
 
-.visit-btn a{
-    color: inherit; /*use the same color as the parent element*/
+.visit-btn a {
+    color: inherit;
+    /*use the same color as the parent element*/
 }
 
-.visit-btn:hover{
+.visit-btn:hover {
     transform: scale(1.1);
-    background: linear-gradient(to right,rgb(9, 9, 174),rgb(95, 4, 168)) ;
+    background: linear-gradient(to right, rgb(9, 9, 174), rgb(95, 4, 168));
 }
 
-#menu-icon{
+#menu-icon {
     font-size: 2rem;
     display: none;
 }
 
-section{
+section {
     min-height: 100vh;
     padding: 8rem 12%;
     width: 100%;
@@ -105,25 +106,25 @@ section{
 }
 
 /* about section */
-.about{
+.about {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.about .about-container{
+.about .about-container {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10rem;
 }
 
-.about img{
+.about img {
     width: 30vw;
     border-radius: 50%;
 }
 
-.info-box{
+.info-box {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -132,30 +133,30 @@ section{
     gap: 1.5rem;
 }
 
-.info-box h3{
+.info-box h3 {
     font-size: 1.8rem;
     font-weight: 500;
     opacity: 0.8;
 }
 
-.info-box h1{
+.info-box h1 {
     font-size: 4rem;
     font-weight: 600;
 }
 
-.info-box span{
-    background: linear-gradient(to right,rgb(9, 9, 174),rgb(95, 4, 168)) ;
+.info-box span {
+    background: linear-gradient(to right, rgb(9, 9, 174), rgb(95, 4, 168));
     background-clip: text;
     color: transparent;
     font-size: 2rem;
 }
 
-.btn-group{
+.btn-group {
     display: flex;
     gap: 1rem;
 }
 
-.btn{
+.btn {
     border-radius: 3rem;
     padding: 0.5rem 1.5rem;
     border: 2px solid black;
@@ -165,57 +166,57 @@ section{
     transition: 0.2s ease-in-out;
 }
 
-.btn:hover{
+.btn:hover {
     background-color: black;
     color: white;
 }
 
-.socials{
+.socials {
     display: flex;
     gap: 2rem;
 }
 
-.socials i{
+.socials i {
     font-size: 2.5rem;
     cursor: pointer;
     transition: 0.2s ease-in-out;
 }
 
-.socials i:hover{
+.socials i:hover {
     transform: scale(1.1);
 }
 
-.socials a{
+.socials a {
     color: inherit;
 }
 
 /* experience section */
-.section-title{
+.section-title {
     text-align: center;
     font-size: 4rem;
     font-weight: 600;
     margin-bottom: 3rem;
 }
 
-.experience-info{
+.experience-info {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 5rem;
 }
 
-.experience img{
+.experience img {
     width: 24vw;
     border-radius: 50%;
 }
 
-.grid{
+.grid {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
 }
 
-.grid-card{
+.grid-card {
     border: 2px solid black;
     border-radius: 3rem;
     padding: 3rem;
@@ -227,58 +228,59 @@ section{
     transition: 0.2s ease-in-out;
 }
 
-.grid-card:hover{
+.grid-card:hover {
     transform: scale(1.02);
     background-color: black;
     color: white;
 }
 
-.grid-card i{
+.grid-card i {
     font-size: 1.5rem;
     margin-bottom: 1rem;
 }
 
-.grid-card .italic{
+.grid-card .italic {
     font-size: 1.2rem;
     margin-left: 0.5rem;
 }
 
-.grid-card span{
+.grid-card span {
     font-size: 1.5rem;
     font-weight: 500;
-    background: linear-gradient(to right,rgb(9, 9, 174),rgb(95, 4, 168)) ;
+    background: linear-gradient(to right, rgb(9, 9, 174), rgb(95, 4, 168));
     background-clip: text;
     color: transparent;
 }
 
 
 /* side scrollbar */
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     width: 15px;
 }
 
-::-webkit-scrollbar-track{
+::-webkit-scrollbar-track {
     background-color: white;
 }
 
-::-webkit-scrollbar-thumb{
-    background: linear-gradient(to right,rgb(13, 13, 65),rgb(54, 3, 99));
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(to right, rgb(13, 13, 65), rgb(54, 3, 99));
     border-radius: 1rem;
 }
 
 
 /* project section */
-.btn a{
-    color: inherit;     /*use the same color as the parent element*/
+.btn a {
+    color: inherit;
+    /*use the same color as the parent element*/
 }
 
-.projects-grid{
+.projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
 }
 
-.projects-card{
+.projects-card {
     padding: 3rem 2rem;
     display: flex;
     flex-direction: column;
@@ -292,34 +294,36 @@ section{
     transition: 0.2s ease-in-out;
 }
 
-.projects-card:hover{
+.projects-card:hover {
     background-color: black;
     color: white;
     transform: translateY(-10px) scale(1.02);
 }
 
-.projects-card img{
+.projects-card img {
     width: 20vw;
     border-radius: 1rem;
 }
 
-.projects-card:hover .btn{
+.projects-card:hover .btn {
     border: 2px solid white;
     color: white;
 }
-.projects-card:hover .btn:hover{
+
+.projects-card:hover .btn:hover {
     border: 2px solid white;
     background-color: white;
     color: black;
 }
-.projects-card h3{
+
+.projects-card h3 {
     font-size: 2rem;
-    font-weight: 500;   
+    font-weight: 500;
 }
 
 /* contact section */
-.input-box{
-    display:flex;
+/* .input-box {
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -328,14 +332,14 @@ section{
     margin-top: 5rem;
 }
 
-.input-box input{
+.input-box input {
     border-radius: 3rem;
     border: 2px solid black;
     padding: 1rem 8rem;
     font-size: 2rem;
 }
 
-.input-box input::placeholder{
+.input-box input::placeholder {
     font-size: 2rem;
 }
 
@@ -343,16 +347,16 @@ section{
     position: relative;
 }
 
-.input i{
+.input i {
     position: absolute;
-    font-size: 4rem ;
+    font-size: 4rem;
     top: 50%;
     left: 10px;
-    transform: translate(50%,-50%);
-}
+    transform: translate(50%, -50%);
+} */
 
 /* footer */
-footer{
+footer {
     bottom: 0;
     left: 0;
     height: 10rem;
@@ -364,81 +368,97 @@ footer{
     justify-content: center;
 }
 
-footer ul{
+footer ul {
     display: flex;
     align-items: center;
     gap: 3rem;
 }
 
-footer ul li a{
+footer ul li a {
     color: black;
     font-weight: 600;
 }
 
-.copyright{
+.copyright {
     font-weight: 300;
     opacity: 0.8;
 }
 
 /* responsive */
 @media (max-width: 1280px) {
-    header{
+    header {
         padding: 1rem 2rem;
         gap: 2rem;
     }
-    .about .about-container{
+
+    .about .about-container {
         gap: 3rem;
     }
-    .experience-info{
+
+    .experience-info {
         flex-direction: column;
     }
-    .input-box input{
+
+    .input-box input {
         padding: 1rem 5rem;
         font-size: 2rem;
     }
-    .input input::placeholder{
+
+    .input input::placeholder {
         font-size: 2rem;
     }
-    .input-box i{
+
+    .input-box i {
         font-size: 2rem;
     }
 }
+
 @media (max-width: 768px) {
-    header{
+    header {
         gap: 1rem;
         padding: 1rem 1rem;
     }
-    header .logo{
-        font-size: 1rem ;
+
+    header .logo {
+        font-size: 1rem;
     }
-    header .visit-btn{
+
+    header .visit-btn {
         display: none;
     }
-    .about-container{
+
+    .about-container {
         flex-direction: column;
     }
-    .input-box input{
+
+    .input-box input {
         padding: 1rem 2rem;
         font-size: 1.8rem;
     }
-    .input-box input::placeholder{
+
+    .input-box input::placeholder {
         font-size: 1.8rem;
     }
-    .input-box i{
-        display: none;   
+
+    .input-box i {
+        display: none;
     }
-    .grid{
-        grid-template-columns: repeat(1,1fr);
+
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
     }
-    .experience-info img{
+
+    .experience-info img {
         width: 70vw;
     }
 }
+
 @media (max-width: 600px) {
-    header #menu-icon{
+    header #menu-icon {
         display: block;
     }
-    .nav-links{
+
+    .nav-links {
         position: absolute;
         top: 100%;
         margin-top: 1rem;
@@ -452,32 +472,110 @@ footer ul li a{
         border-radius: 3rem;
         display: none;
     }
-    .nav-links li{
+
+    .nav-links li {
         margin-top: 1.5rem;
         padding: 1rem;
     }
-    .nav-links.active{
+
+    .nav-links.active {
         display: block;
     }
-    header{
+
+    header {
         padding: 1rem 5rem;
         gap: 8rem;
     }
-    header .logo{
-        font-size: 1.5rem ;
+
+    header .logo {
+        font-size: 1.5rem;
     }
-    .about-container{
+
+    .about-container {
         width: 80vw;
     }
-    .input-box input{
+
+    .input-box input {
         padding: 0.5rem 3rem;
         width: 80%;
         font-size: 1.5rem;
     }
-    .input-box input::placeholder{
+
+    .input-box input::placeholder {
         font-size: 1.5rem;
     }
-    footer ul{
+
+    footer ul {
         gap: 1rem;
     }
+}
+
+/* Responsive ti tu ber CSS */
+.form-container {
+    width: 100%;
+    max-width: 400px;
+    /* Computer-ah chuan 400px aia lianin a awm lo ang */
+    margin: 0 auto;
+    /* A laiah a dah ang */
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.input {
+    position: relative;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.input input,
+.input textarea {
+    width: 100%;
+    /* Mobile screen size azirin a in adjust ang */
+    padding: 12px 15px 12px 40px;
+    /* Icon awmna tur space */
+    border: 1px solid #000;
+    border-radius: 25px;
+    /* I thlalak ami ang khan a kual ang */
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.input textarea {
+    resize: none;
+    /* Kuta pawh fan theihna kha a ti tawp */
+    overflow: hidden;
+    /* Scrollbar a rawn lang lo ang */
+    border-radius: 15px;
+    min-height: 150px;
+}
+
+.input i {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    color: #000;
+    font-size: 18px;
+}
+
+.btn-form{
+    display: block;
+    margin: 0 auto;
+    padding: 10px 30px;
+    border-radius: 20px;
+    border: 1px solid #000;
+    background: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-form:hover {
+    background: #000000;
+    color: white;
+    /* transform: scale(1.08); */
+    transition: 0.3s;
+}
+
+.input input::placeholder{
+    font-size: 20px;
 }

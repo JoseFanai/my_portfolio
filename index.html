@@ -157,14 +157,23 @@
         <div class="input-box">
             <h2 class="section-title">Contact Me</h2>
 
-            <form action="https://formspree.io/f/xaqvzyqk" method="POST">
-                <div class="input">
-                    <input type="email" name="email" placeholder="example@email.com" required>
-                    <i class="fa-solid fa-envelope"></i>
-                </div><br>
-                <button type="submit" class="btn" id="mail-submit">Submit</button>
-            </form>
-        </div>
+            <div class="form-container">
+                <form action="https://formspree.io/f/xaqvzyqk" method="POST">
+
+                    <div class="input">
+                        <input type="email" name="email" placeholder="example@email.com" required>
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+
+                    <div class="input">
+                        <textarea name="message" id="autoExpand" placeholder="Write your message here..." rows="1"
+                            required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-form" id="mail-submit">Submit</button>
+
+                </form>
+            </div>
     </section>
 
     <footer>
